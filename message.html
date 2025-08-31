@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="style.css">
+    <title>Message</title>
+
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Type Your Message</h1>
+        
+        <div class="message-container">
+            <textarea 
+                class="message-textarea" 
+                id="messageInput" 
+                placeholder="Start typing your message here..."
+                maxlength="200"
+            ></textarea>
+        </div>
+
+        <div class="character-info">
+            <div class="character-count" id="charCount">0/200 characters</div>
+            
+            <div class="progress-container">
+                <div class="progress-bar" id="progressBar"></div>
+            </div>
+            
+            <div class="warning-message" id="warningMessage">
+                ⚠️ Character limit exceeded! Please reduce your message.
+            </div>
+        </div>
+
+        <div class="stats-container">
+            <div class="stat-item">
+                <span class="stat-number" id="wordCount">0</span>
+                <span class="stat-label">Words</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number" id="lineCount">1</span>
+                <span class="stat-label">Lines</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number" id="remainingCount">200</span>
+                <span class="stat-label">Remaining</span>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
